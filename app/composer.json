@@ -1,0 +1,5 @@
+{
+    "require": {
+        "acamposm/ping": "^2.1"
+    }
+}

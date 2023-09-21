@@ -1,0 +1,2 @@
+<span style="display:none">{{ $task->is_active ?? '' }}</span>
+<input type="checkbox" disabled="disabled" {{ $task->is_active ? 'checked' : '' }} onchange="getElementById('togg;e-from-{{$task->id}}').submit()">

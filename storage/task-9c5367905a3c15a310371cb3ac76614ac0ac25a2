@@ -1,0 +1,22 @@
+Sending emails...
+
+   Error 
+
+  Call to undefined function App\Console\Commands\random_init()
+
+  at app/Console/Commands/SendEmails.php:29
+     25▕      */
+     26▕     public function handle()
+     27▕     {
+     28▕         $this->line("Sending emails...");
+  ➜  29▕         sleep(random_init(3,5));
+     30▕         $this->line('Done!');
+     31▕     }
+     32▕ }
+     33▕
+
+      [2m+12 vendor frames [22m
+
+  13  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
